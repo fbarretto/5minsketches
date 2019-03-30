@@ -5,10 +5,11 @@ SyphonServer server;
 
 List<Rect> rectangles;
 
-int max_rect = 40;
+int max_rect = 20;
+int delay = 2000;
 
 void settings() {
-  size(800, 800, P3D);
+  size(1080, 1080, P3D);
   PJOGL.profile=1;
 }
 
@@ -20,11 +21,14 @@ void setup() {
     rectangles.add(r);
   }
   
-  ellipseMode(CORNER);
+  rectMode(CENTER);
   strokeWeight(4);
   noFill();
   stroke(255,190);
   smooth();
+  
+  server = new SyphonServer(this, "Rect Syphon");
+  
 }
 
 
@@ -37,4 +41,7 @@ void draw() {
     for (Rect r: rectangles) {
     r.render();
   }
+  server.sendScreen();
+  delay(delay);
+  delay = 0;
 }
