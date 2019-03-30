@@ -44,12 +44,7 @@ void draw() {
     d.draw();
   }
    
-  if (drops.size()<maxDrops) {
-    drops.add(new Drop());
-    drops.add(new Drop());
-    drops.add(new Drop());
-    drops.add(new Drop());
-    drops.add(new Drop());
+  while (drops.size()<maxDrops) {
     drops.add(new Drop());
   }
   server.sendScreen();

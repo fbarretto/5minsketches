@@ -21,9 +21,9 @@ void setup() {
   }
   
   ellipseMode(CORNER);
-  strokeWeight(2);
+  strokeWeight(4);
   noFill();
-  stroke(255);
+  stroke(255,190);
   smooth();
 }
 
