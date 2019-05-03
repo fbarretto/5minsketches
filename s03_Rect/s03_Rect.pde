@@ -1,6 +1,6 @@
 import java.util.*;
 import codeanticode.syphon.*;
-
+//a
 SyphonServer server;
 
 List<Rect> rectangles;
