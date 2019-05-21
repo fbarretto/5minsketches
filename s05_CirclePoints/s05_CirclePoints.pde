@@ -26,10 +26,10 @@ void draw() {
     c.render();
   }
 
-  //for (int i=0; i<circles.get(0).points.size(); i++) {
-  //  strokeWeight(2);
-  //  stroke(255);
-  //  line(circles.get(0).points.get(i).pos.x, circles.get(0).points.get(i).pos.y,
-  //  circles.get(2).points.get(i).pos.x, circles.get(2).points.get(i).pos.y);
-  //}
+  for (int i=0; i<circles.get(0).points.size(); i++) {
+    strokeWeight(2);
+    stroke(255);
+    line(circles.get(0).points.get(i).pos.x, circles.get(0).points.get(i).pos.y,
+    circles.get(2).points.get(i).pos.x, circles.get(2).points.get(i).pos.y);
+  }
 }
