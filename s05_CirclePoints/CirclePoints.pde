@@ -4,13 +4,15 @@ public class CirclePoints {
   float speed;
   float theta;
   PVector pos;
-
-  CirclePoints(float offset, float radius, float speed) {
+  int size;
+  
+  CirclePoints(float offset, float radius, float speed, int size) {
     this.offset = offset;
     this.radius = radius;
     this.speed = speed;
     theta = offset;
     pos = new PVector();
+    this.size = size;
   }
 
   void update(PVector pos) {
@@ -23,7 +25,7 @@ public class CirclePoints {
   void render() {
     ellipseMode(CENTER);
     noStroke();
-    fill(255);
-    ellipse(pos.x, pos.y, 4, 4);
+    fill(255,125);
+    ellipse(pos.x, pos.y, size, size);
   }
 }
