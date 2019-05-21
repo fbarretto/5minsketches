@@ -1,9 +1,13 @@
 import java.util.*;
 import codeanticode.syphon.*;
+<<<<<<< HEAD
 //import com.hamoid.*;
 
 //VideoExport videoExport;
 
+=======
+//a
+>>>>>>> 4c1e7e0f35eb44ae5117892439900cf113b5a138
 SyphonServer server;
 
 List<Rect> rectangles;
