@@ -42,15 +42,16 @@ void draw() {
     strokeWeight(2);
     stroke(255);
     noFill();
-    bezier(circles.get(0).points.get(i).pos.x, circles.get(0).points.get(i).pos.y, 
+   bezier(circles.get(0).points.get(i).pos.x, circles.get(0).points.get(i).pos.y, 
       circlesControl.get(1).points.get(i).pos.x, circlesControl.get(1).points.get(i).pos.y, 
-      circlesControl.get(2).points.get(i).pos.x, circlesControl.get(2).points.get(i).pos.y, 
-      circles.get(3).points.get(i).pos.x, circles.get(3).points.get(i).pos.y);
+      circlesControl.get(3).points.get(i).pos.x, circlesControl.get(3).points.get(i).pos.y, 
+      circles.get(2).points.get(i).pos.x, circles.get(2).points.get(i).pos.y);
 
     bezier(circles.get(0).points.get(i).pos.x, circles.get(0).points.get(i).pos.y, 
-      circlesControl.get(2).points.get(i).pos.x, circlesControl.get(2).points.get(i).pos.y, 
+      circlesControl.get(3).points.get(i).pos.x, circlesControl.get(3).points.get(i).pos.y, 
       circlesControl.get(1).points.get(i).pos.x, circlesControl.get(1).points.get(i).pos.y, 
-      circles.get(3).points.get(i).pos.x, circles.get(3).points.get(i).pos.y);
+      circles.get(2).points.get(i).pos.x, circles.get(2).points.get(i).pos.y);
+
 
 
     //line(circles.get(1).points.get(i).pos.x, circles.get(1).points.get(i).pos.y,
