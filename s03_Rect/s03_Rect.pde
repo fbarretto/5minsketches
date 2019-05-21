@@ -1,5 +1,8 @@
 import java.util.*;
 import codeanticode.syphon.*;
+//import com.hamoid.*;
+
+//VideoExport videoExport;
 
 SyphonServer server;
 
@@ -28,20 +31,25 @@ void setup() {
   smooth();
   
   server = new SyphonServer(this, "Rect Syphon");
+  frameRate(30);
   
+  //videoExport = new VideoExport(this, "rect.mp4");
+  //videoExport.setFrameRate(30); 
+  //videoExport.setQuality(100);
 }
-
 
 void draw() {
   background(0);
+  
   for (Rect r: rectangles) {
     r.update();
   }
   
-    for (Rect r: rectangles) {
+  for (Rect r: rectangles) {
     r.render();
   }
   server.sendScreen();
-  delay(delay);
-  delay = 0;
+  //if (frameCount<=1800) {
+  //  videoExport.saveFrame();
+  //}
 }
