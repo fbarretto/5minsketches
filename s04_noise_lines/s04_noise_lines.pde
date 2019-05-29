@@ -6,8 +6,8 @@ List<Unit> units;
 
 void setup() {
   size(800, 800);
-  strokeWeight(2);
-  stroke(255,150);
+  strokeWeight(1);
+  stroke(255,100);
   noFill();
 
   units = new ArrayList<Unit>();
@@ -20,7 +20,7 @@ void setup() {
 }
 
 void draw() {
-  fill(0,150);
+  fill(0,50);
   rect(0,0,width,height);
   
   update();
