@@ -1,7 +1,7 @@
 import java.util.List;
-import com.hamoid.*;
+//import com.hamoid.*;
 
-VideoExport videoExport;
+//VideoExport videoExport;
 
 
 Circle control;
@@ -26,9 +26,9 @@ void setup() {
   smooth();
   
   frameRate(30);
-  videoExport = new VideoExport(this, "rect.mp4");
-  videoExport.setFrameRate(30); 
-  videoExport.setQuality(100);
+  //videoExport = new VideoExport(this, "rect.mp4");
+  //videoExport.setFrameRate(30); 
+  //videoExport.setQuality(100);
 }
 
 
@@ -69,7 +69,7 @@ void draw() {
     //circles.get(3).points.get(i).pos.x, circles.get(3).points.get(i).pos.y);
   }
   
-  if (frameCount<=1800) {
-    videoExport.saveFrame();
-  }
+  //if (frameCount<=1800) {
+  //  videoExport.saveFrame();
+  //}
 }
